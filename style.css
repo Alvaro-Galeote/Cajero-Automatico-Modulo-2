@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    background: linear-gradient(#5B2E48, #585563);
+    flex-direction: column;
+}
+
+header{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+    
+}
+
+main,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    flex-direction: column;
+
+    outline: solid 3px black;
+    
+    
+    
+}
+
+#img-inicio{
+    width: 100px;
+    height: 100px;
+}
+
+#icono{
+    display: inline;
+    width: 40px;
+    height: 40px;
+}
+
+.jumping-heading {
+    animation: jump 5s ease-in-out infinite;
+}
+
+@keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.entrada{
+    display: flex;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 50px;
+    
+}
+.entrada img{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+
+.entrada input{
+    border-radius: 10px;
+    width: 200px;
+}
+
+.guardar{
+    
+    width: 30%;
+    height: 5%;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #E60023;
+    border: none;
+    border-radius: 12rem;
+    transition: 1s all;
+    cursor: pointer;
+    justify-content: flex-end;
+    align-items: end;
+    margin-top: 20px;
+    order: 1px;
+}
+

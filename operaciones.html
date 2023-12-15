@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-operaciones.css">
+        <title>ATM</title>
+    </head>
+
+        <body> 
+           <header>
+                 <section><h2>ATM</h2></section>
+                    <section>
+                      <h4>Card Return</h4>
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaaJTwbVnLvTDrtSC8DI6LjLmzkKM8scTdBRFHn00MxbMuZwAquO_RIY80E7NkEN-nZo8&usqp=CAU" alt="">
+                    </section>
+           </header>
+
+           <aside>
+                    <h5>Welcome</h5>
+                    <p id="nombreUser">User name</p>
+
+                    <h5>Cuenta</h5>
+                    <h1 class="saldo">$ 899.00</h1>
+            </aside>
+
+            <div class="main" id="main-Inicio"> 
+              
+               <section>
+                 <button onclick="mostrarContenido('deposit-Inicio')" class="pulse" id="deposit"><p>Ingresar efectivo</p></button>
+               </section>
+
+               <section>
+                <button onclick="mostrarContenido('retiro-Inicio')" class="pulse" id="get-Cash"><p>Retirar efectivo</p></button>
+              </section>
+
+              <section>
+                <button onclick="mostrarContenido('consult-Inicio')" class="pulse" id="check"><p>Consultar saldo</p></button>
+              </section>
+
+              <section>
+               <a href="index.html"><button class="pulse" id="out"><p>Salir</p></button></a>
+              </section>
+            
+            </div>
+
+            <div class="deposit-content contenido" id="deposit-Inicio">
+                    <article class="operacion">
+                              <h1>Ingrese el monto por favor</h1>
+                              <input type="text" name="input-ingreso" id="input-ingreso">
+
+                              <section>
+                                  <button class="btn" id="guardar-ingreso" onclick="guardar()">Guardar</button>
+                                  <button class="btn" onclick="volver('deposit-Inicio')">Volver</button>
+                              </section>
+                    </article>
+
+                    <article class="division">
+                          <h2>Ingresaste: </h2>
+                              <p class="ingresoN">0</p>
+
+                          <h2>Su saldo ahora es de: </h2>
+                              <p class="saldo" id="saldo-actualizado">120</p>
+                    </article>
+            </div>
+            
+            <div class="retiro-content contenido" id="retiro-Inicio">
+                    <article class="operacion">
+                            <h1>Ingrese el monto a retirar por favor</h1>
+                            <input type="text" name="input-retiro" id="input-retiro">
+
+                              <section>
+                                <button class="btn" id="guardar-retiro" onclick="guardar()">Guardar</button>
+                                <button class="btn" onclick="volver('retiro-Inicio')">Volver</button>
+                              </section>
+                    </article>
+
+                    <article class="division">
+                          <h2>Retiraste: </h2>
+                              <p id="retiro">0</p>
+
+                          <h2>Su saldo ahora es de: </h2>
+                              <p class="saldo">$ 0</p>
+                    </article>
+            </div>
+
+            <div class="consulta-content contenido" id="consult-Inicio">
+                <article class="operacion">
+                        <h1>Su saldo actual es de:</h1>
+                        <h1 class="saldo">$ 0</h1>
+                            <button class="btn1" onclick="volver('consult-Inicio')">Volver</button>
+                          
+                </article>
+            </div>
+        
+            
+            <script src="script.js" defer></script>
+            <script src="nuevo.js" defer></script>
+        </body>
+</html>
